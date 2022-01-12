@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>values</title>
+    <script>
+        function add(){
+            // declare html elements as variables
+            var num1 = document.getElementById("num1");
+            var num2 = document.getElementById("num2");
+            var output = document.getElementById("output");
+
+            // calculate sum
+            var sum = parseInt(num1.value) + parseInt(num2.value);
+
+            // output the result
+            output.innerHTML = sum;
+        }
+        function subtract(){
+            var num1 = document.getElementById("num1");
+            var num2 = document.getElementById("num2");
+            var output = document.getElementById("output");
+
+            var difference = parseInt(num1.value) - parseInt(num2.value);
+
+            output.innerHTML = difference;
+        }
+        function multiply(){
+            var num1 = document.getElementById("num1");
+            var num2 = document.getElementById("num2");
+            var output = document.getElementById("output");
+
+            var product = parseInt(num1.value) * parseInt(num2.value);
+
+            output.innerHTML = product;
+        }
+        function divide(){
+            var num1 = document.getElementById("num1");
+            var num2 = document.getElementById("num2");
+            var output = document.getElementById("output");
+
+            var quotient = parseInt(num1.value) / parseInt(num2.value);
+
+            output.innerHTML = quotient;
+        }
+    </script>
+</head>
+<body>
+first: <input type="text" name="num1" id="num1"><br/>
+second: <input type="text" name="num2" id="num2"><br/>
+<button name="add" onClick="add()">add</button><br/>
+<button name="subtract" onClick="subtract()">subtract</button><br/>
+<button name="multiply" onClick="multiply()">multiply</button><br/>
+<button name="divide" onClick="divide()">divide</button><br/>
+<div id="output">tacoducky22</div>
+</body>
+</html>
